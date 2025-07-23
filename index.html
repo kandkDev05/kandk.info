@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KandK.info</title>
+  <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <div class="container">
+    <h1>KandK.info</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+      <a href="About.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome To KandK.info</h2>
+      <p>Offering web and game development — with a designer’s touch</p>
+      
+      <div class="hero-img">
+        <img src="FINAL_LOGO_NOBG.png" alt="Profile Picture" />
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>Some of our projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="bitmap.png" alt="Boutique Safa" />
+          <h3>Boutique Safa</h3>
+          <p>Logo for Safa Boutique, a women’s clothing store</p>
+        </div>
+        <div class="project">
+          <img src="ayadi_logo-01.png" alt="Ayadi" />
+          <h3>Ayadi</h3>
+          <p>Logo for Ayadi Sweets page</p>
+        </div>
+        <div class="project">
+          <img src="Approusouf logo_V2.png" alt="Approsouf Hotel" />
+          <h3>Approsouf Hotel</h3>
+          <p>Logo of the Approsouf Hotel located in Ouargla</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2>Our services</h2>
+      <div class="service-box">
+        <h3>WebDevelopment</h3>
+        <p>We provide a complete website programming service from scratch.</p>
+      </div>
+      <div class="service-box">
+        <h3>Graphic Design</h3>
+        <p>We provide graphic design services from designing a visual identity to publishing the first post.</p>
+      </div>
+      <button><a href="About.html">About us</a></button>
+    </div>
+  </section>
+
+  <footer>
+  <div class="container">
+    <p>&copy; 2025 KandK.info — All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://www.tiktok.com/@kandk.dev"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/kandk_dev/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61577831617613"><i class="fab fa-facebook"></i></a>
+        <a href="https://discord.gg/kmSQahNN"><i class="fab fa-discord"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("show");
+  }
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

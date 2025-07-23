@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+  <div class="container">
+    <h1>KandK.info</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+      <a href="About.html">Contact</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<section class="projects container" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="logo">Logos</button>
+    <button class="filter-btn" data-filter="poster">Posters</button>
+    <button class="filter-btn" data-filter="ui">UI Design</button>
+    <button class="filter-btn" data-filter="website">Full Website</button>
+  </div>
+
+  <div class="project-grid">
+    <div class="project" data-category="logo" data-aos="fade-up">
+      <img src="bitmap.png" alt="Logo Project">
+      <h3>Boutique Safa</h3>
+      <p>Logo for Safa Boutique, a women’s clothing store</p>
+      
+    
+    <!-- خلي المشروع الجديد بنفس التاج باش  هذو باش يتفلتر 
+       او دير سبان كلاس بادج سميه نيو للحوايج الجديدةlogo poster ui website-->
+  </div>
+    <div class="project" data-category="logo" data-aos="fade-up">
+      <img src="ayadi_logo-01.png" alt="Logo Project">
+      <h3>Ayadi</h3>
+      <p>Logo for Ayadi Sweets page</p>
+      <span class="badge">New</span>
+    
+    <!-- خلي المشروع الجديد بنفس التاج باش  هذو باش يتفلتر 
+       او دير سبان كلاس بادج سميه نيو للحوايج الجديدةlogo poster ui website-->
+  </div>
+
+
+    <div class="project" data-category="logo" data-aos="fade-up">
+      <img src="Approusouf logo_V2.png" alt="Logo Project">
+      <h3>Approusouf logo</h3>
+      <p>Logo of the Approsouf Hotel located in Ouargla</p>
+      <span class="badge">New</span>
+    
+    <!-- خلي المشروع الجديد بنفس التاج باش  هذو باش يتفلتر 
+       او دير سبان كلاس بادج سميه نيو للحوايج الجديدةlogo poster ui website-->
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 KandK.info — All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://www.tiktok.com/@kandk.dev"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/kandk_dev/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61577831617613"><i class="fab fa-facebook"></i></a>
+        <a href="https://discord.gg/kmSQahNN"><i class="fab fa-discord"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const category = btn.getAttribute('data-filter');
+
+      projects.forEach(project => {
+        const match = category === 'all' || project.dataset.category === category;
+        project.style.display = match ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
